@@ -1,0 +1,30 @@
+<html>
+<head>
+  <!-- Include Tailwind CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Include jVectorMap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap-world-mill.js"></script>
+
+  <!-- Include custom script -->
+  <script src="script.js"></script>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <h1 class="text-4xl font-bold text-center mb-4">Interactive Worldmap Frontend UI</h1>
+    <div class="flex flex-col items-center">
+      <div id="map" class="w-full h-96 border-4 border-gray-300 rounded-lg"></div>
+      <div class="mt-4">
+        <label for="year" class="text-xl font-medium mr-2">Select a year:</label>
+        <input type="range" id="year" min="2009" max="2023" value="2023" class="w-64">
+        <span id="year-value" class="text-xl font-medium ml-2">2023</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
