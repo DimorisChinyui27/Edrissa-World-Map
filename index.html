@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>World Map UI</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="child-container">
+      <div id="timeline">
+        <button id="year">Year</button>
+        <!-- Add a div element to hold the year select element -->
+        <div id="year-select"></div>
+        <button id="month">Month</button>
+        <!-- Add a div element to hold the month select element -->
+        <div id="month-select"></div>
+        <button id="day">Day</button>
+        <!-- Add a div element to hold the day select element -->
+        <div id="day-select"></div>
+      </div>
+      <div id="map">
+      </div>
+    </div>
+    <div id="history">
+      <label for="toggle">Location History</label>
+      <input type="checkbox" id="toggle">
+    </div>
+  </div>
+  <script src="./script.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATcnPtTIlIbRGC6bij_wkUevpHWBJff78&callback=initMap"></script>
+</body>
+
+</html>
